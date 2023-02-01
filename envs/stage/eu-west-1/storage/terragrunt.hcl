@@ -1,10 +1,9 @@
+include "root" {
+  path = find_in_parent_folders()
+}
+
 terraform {
   source = "../../../../modules//storage"
 }
 
-inputs = {
-  account_id = "963345548549"
-  region     = "eu-west-1"
-  prefix     = "example"
-  env        = "stage"
-}
+inputs = {}
