@@ -14,7 +14,7 @@ terragrunt run-all plan
 ### per env
 
 ```sh
-cd envs/stage
+cd envs/stage # dev|stage|prod
 terragrunt run-all plan
 ```
 
@@ -28,12 +28,12 @@ terraform plan -var-file=../../old/stage/eu-west-1/storage/terraform.tfvars
 
 ## next
 
-- module dependencies / run all
-- setup the backend
+- share inputs
 - provider role arn (generate?)
-- improved cli flags
-- hooks
-- lockfile?
+- setup the backend
+- improved cli flags?
+- hooks?
+- lockfile useful?
 
 ## reference
 
