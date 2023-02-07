@@ -1,3 +1,3 @@
 resource "aws_secretsmanager_secret" "secret" {
-  name = format("%s%s", var.prefix, var.env)
+  name = join("-", [var.account_id, var.prefix, var.env])
 }

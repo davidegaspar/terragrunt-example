@@ -4,9 +4,18 @@ Terragrunt example
 
 ## envs
 
+### per module
+
 ```sh
 cd envs/stage/eu-west-1/storage
-terragrunt plan
+terragrunt run-all plan
+```
+
+### per env
+
+```sh
+cd envs/stage
+terragrunt run-all plan
 ```
 
 ## old
