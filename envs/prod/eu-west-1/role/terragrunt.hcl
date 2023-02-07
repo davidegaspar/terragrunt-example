@@ -6,4 +6,8 @@ terraform {
   source = "../../../../modules//role"
 }
 
+dependencies {
+  paths = ["../secret", "../storage"]
+}
+
 inputs = {}
