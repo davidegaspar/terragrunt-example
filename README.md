@@ -28,10 +28,9 @@ terraform plan -var-file=../../old/stage/eu-west-1/storage/terraform.tfvars
 
 ## next
 
+- module dependencies / run all
 - setup the backend
 - provider role arn (generate?)
-- include "env" ??? to spread the config
-- module dependencies / run all
 - improved cli flags
 - hooks
 - lockfile?
