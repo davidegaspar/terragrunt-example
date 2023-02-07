@@ -18,14 +18,6 @@ cd envs/dev # dev|stage|prod
 terragrunt run-all plan
 ```
 
-## old
-
-```sh
-cd modules/storage
-terraform init
-terraform plan -var-file=../../old/stage/eu-west-1/storage/terraform.tfvars
-```
-
 ## next
 
 - share inputs
