@@ -7,14 +7,14 @@ Terragrunt example
 ### per module
 
 ```sh
-cd envs/stage/eu-west-1/storage
+cd envs/dev/eu-west-1/storage
 terragrunt run-all plan
 ```
 
 ### per env
 
 ```sh
-cd envs/stage # dev|stage|prod
+cd envs/dev # dev|stage|prod
 terragrunt run-all plan
 ```
 
@@ -30,7 +30,7 @@ terraform plan -var-file=../../old/stage/eu-west-1/storage/terraform.tfvars
 
 - share inputs
 - provider role arn (generate?)
-- setup the backend
+- setup the backend (generate?)
 - improved cli flags?
 - hooks?
 - lockfile useful?
