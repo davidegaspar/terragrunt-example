@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "../../../../modules//role"
+  source = "${get_parent_terragrunt_dir()}/../modules//role"
 }
 
 dependency "secret" {

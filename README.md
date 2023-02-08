@@ -16,6 +16,12 @@ terragrunt run-all plan
 ```sh
 cd envs/dev # dev|stage|prod
 terragrunt run-all plan
+terragrunt run-all apply
+terragrunt run-all destroy
+terragrunt run-all outputs
+terragrunt run-all graph-dependencies
+terragrunt run-all terragrunt-info
+terragrunt run-all validate-inputs
 ```
 
 ## development
@@ -31,6 +37,7 @@ terragrunt hclfmt
 
 ## next
 
+- feat: move all module config up?
 - improved cli flags?
 - hooks?
 - lockfile useful?
