@@ -1,3 +1,3 @@
-inputs = {
-  region     = "eu-west-1"
+locals {
+  region = "eu-west-1"
 }

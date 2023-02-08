@@ -1,4 +1,11 @@
 {
   "Version": "2012-10-17",
-  "Statement": []
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": ["secretsmanager:GetSecretValue", "s3:GetBucket*"],
+      "Resource": ["${secretsmanager_secret_arn}", "${s3_bucket_arn}"]
+    }
+  ]
 }

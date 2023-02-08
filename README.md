@@ -18,11 +18,19 @@ cd envs/dev # dev|stage|prod
 terragrunt run-all plan
 ```
 
+## development
+
+```sh
+# debug
+export TERRAGRUNT_LOG_LEVEL=debug
+# cleanup
+rm -rf **/.terragrunt-cache
+# fmt
+terragrunt hclfmt
+```
+
 ## next
 
-- share inputs
-- provider role arn (generate?)
-- setup the backend (generate?)
 - improved cli flags?
 - hooks?
 - lockfile useful?
@@ -30,3 +38,5 @@ terragrunt run-all plan
 ## reference
 
 - https://terragrunt.gruntwork.io/docs/#features
+- https://github.com/gruntwork-io/terragrunt-infrastructure-live-example
+- https://github.com/gruntwork-io/terragrunt-infrastructure-modules-example
