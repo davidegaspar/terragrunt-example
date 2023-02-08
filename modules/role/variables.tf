@@ -10,3 +10,9 @@ variable "prefix" {
 variable "env" {
   type = string
 }
+variable "s3_bucket_arn" {
+  type = string
+}
+variable "secretsmanager_secret_arn" {
+  type = string
+}

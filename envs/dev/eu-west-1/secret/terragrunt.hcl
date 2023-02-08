@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "../../../../modules//secret"
+  source = "${get_parent_terragrunt_dir()}/../modules//secret"
 }
 
 inputs = {}

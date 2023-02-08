@@ -16,17 +16,33 @@ terragrunt run-all plan
 ```sh
 cd envs/dev # dev|stage|prod
 terragrunt run-all plan
+terragrunt run-all apply
+terragrunt run-all destroy
+terragrunt run-all outputs
+terragrunt run-all graph-dependencies
+terragrunt run-all terragrunt-info
+terragrunt run-all validate-inputs
+```
+
+## development
+
+```sh
+# debug
+export TERRAGRUNT_LOG_LEVEL=debug
+# cleanup
+rm -rf **/.terragrunt-cache
+# fmt
+terragrunt hclfmt
 ```
 
 ## next
 
-- share inputs
-- provider role arn (generate?)
-- setup the backend (generate?)
-- improved cli flags?
-- hooks?
-- lockfile useful?
+- feat: move all module config up
+- not sure what to do about the account id...
+- is the lockfile useful?
 
 ## reference
 
 - https://terragrunt.gruntwork.io/docs/#features
+- https://github.com/gruntwork-io/terragrunt-infrastructure-live-example
+- https://github.com/gruntwork-io/terragrunt-infrastructure-modules-example
