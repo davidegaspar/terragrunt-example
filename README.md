@@ -39,9 +39,7 @@ terragrunt hclfmt
 
 - feat: move all module config up
 - not sure what to do about the account id...
-- improved cli flags?
-- hooks?
-- lockfile useful?
+- is the lockfile useful?
 
 ## reference
 
